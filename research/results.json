@@ -1,0 +1,53 @@
+{
+ "note": "SIMULATED grid (UCI 471), not field data; unstable = positive; alpha=0.05; 30 repeats",
+ "n": 10000,
+ "unstable_share": 0.638,
+ "models": {
+  "logistic": {
+   "iid": {
+    "cov_unstable": 0.9508185301288751,
+    "cov_stable": 0.9493861264579497,
+    "referral_rate": 0.41264444444444437,
+    "accuracy_automatic": 0.9155904288964642,
+    "unstable_called_stable_automatic": 0.049181469871125046,
+    "argmax_accuracy": 0.8157111111111112,
+    "argmax_unstable_called_stable": 0.1220828979449669
+   },
+   "shift": {
+    "cov_unstable": 1.0,
+    "cov_stable": 0.7655701754385966,
+    "referral_rate": 0.13795000000000002,
+    "accuracy_automatic": 0.9793599713848821,
+    "unstable_called_stable_automatic": 0.0,
+    "argmax_accuracy": 0.93765,
+    "argmax_unstable_called_stable": 0.0003246753246753247
+   }
+  },
+  "grad_boosting": {
+   "iid": {
+    "cov_unstable": 0.9492859630790665,
+    "cov_stable": 0.9521178637200738,
+    "referral_rate": 0.09530000000000001,
+    "accuracy_automatic": 0.9451159953421501,
+    "unstable_called_stable_automatic": 0.05071403692093348,
+    "argmax_accuracy": 0.9133888888888889,
+    "argmax_unstable_called_stable": 0.04332985022640195
+   },
+   "shift": {
+    "cov_unstable": 0.9263347763347763,
+    "cov_stable": 0.9752192982456138,
+    "referral_rate": 0.09531666666666666,
+    "accuracy_automatic": 0.9227067807648581,
+    "unstable_called_stable_automatic": 0.07366522366522367,
+    "argmax_accuracy": 0.8916,
+    "argmax_unstable_called_stable": 0.11206709956709957
+   }
+  }
+ },
+ "shift_definition": {
+  "train_cal_tau_max": 5.616538800064192,
+  "test_tau_min": 6.428015029695061,
+  "unstable_share_in_train": 0.4841666666666667,
+  "unstable_share_in_test": 0.924
+ }
+}
